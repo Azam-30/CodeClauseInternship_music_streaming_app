@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <title>ChillIn</title>
+  </head>
+  <body>
+    <header>
+      <div class="menu_side">
+        <h1>PlayList</h1>
+        <div class="playlist">
+          <h4 class="active">
+            <span></span><i class="bi bi-headphones"></i>
+            <a href="dailyMix/dailyMix.html" class="Daily" target="_blank"
+              >Daily Mix</a
+            >
+          </h4>
+          <h4 class="active">
+            <span></span><i class="bi bi-headphones"></i>
+            <a href="forYou/forYou.html" class="Daily" target="_blank"
+              >For You</a
+            >
+          </h4>
+          <h4 class="active">
+            <span></span><i class="bi bi-suit-heart"></i
+            ><a href="playlist/playlist.html" class="Daily" target="_blank"
+              >Favourites</a
+            >
+          </h4>
+        </div>
+
+        <div class="menu_song">
+          <li class="songItem">
+            <span>01</span>
+            <img src="img/1.webp" alt="Ali" />
+            <h5>
+              It's You
+              <div class="subtitle">Ali Gate</div>
+            </h5>
+            <i class="bi playListPlay bi-play-circle-fill" id="1"></i>
+          </li>
+          <li class="songItem">
+            <span>02</span>
+            <img src="img/2.webp" alt="shreya" />
+            <h5>
+              Saibo
+              <div class="subtitle">Sachin-Jigar</div>
+            </h5>
+            <i class="bi playListPlay bi-play-circle-fill" id="2"></i>
+          </li>
+          <li class="songItem">
+            <span>03</span>
+            <img src="img/3.webp" alt="Ali" />
+            <h5>
+              Chitta
+              <div class="subtitle">Manan Bhardwaj</div>
+            </h5>
+            <i class="bi playListPlay bi-play-circle-fill" id="3"></i>
+          </li>
+          <li class="songItem">
+            <span>04</span>
+            <img src="img/4.webp" alt="Ali" />
+            <h5>
+              O Saajna
+              <div class="subtitle">Akhil Sachdeva</div>
+            </h5>
+            <i class="bi playListPlay bi-play-circle-fill" id="4"></i>
+          </li>
+          <li class="songItem">
+            <span>05</span>
+            <img src="img/5.webp" alt="Ali" />
+            <h5>
+              Stay
+              <div class="subtitle">The Kid Laroi, Justin Bieber</div>
+            </h5>
+            <i class="bi playListPlay bi-play-circle-fill" id="5"></i>
+          </li>
+          <li class="songItem">
+            <span>06</span>
+            <img src="img/6.webp" alt="Ali" />
+            <h5>
+              Unstoppable
+              <div class="subtitle">Sia</div>
+            </h5>
+            <i class="bi playListPlay bi-play-circle-fill" id="6"></i>
+          </li>
+        </div>
+      </div>
+
+      <div class="song_side">
+        <nav>
+          <ul>
+            <li>Home<span></span></li>
+            <li>
+              <a
+                href="playlist/playlist.html"
+                class="playlisttt"
+                target="_blank"
+                >PlayList</a
+              >
+            </li>
+            <li>
+              <a href="#" target="_blank" class="playlisttt"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="contactUs/contactUs.html"
+                target="_blank"
+                class="playlisttt"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+
+          <div class="search">
+            <i class="bi bi-search"></i>
+            <input type="text" placeholder="Search" />
+          </div>
+        </nav>
+        <div class="content">
+          <h1>Marshmellow-Friends</h1>
+          <img src="img/marshmellow.webp" alt="" />
+          <p>
+            Haven't I made it obvious?<br />
+            Haven't I made it clear?<br />
+            Want me to spell it out for you?<br />
+            F-R-I-E-N-D-S
+          </p>
+          <div class="buttons">
+            <button>PLAY</button>
+            <button>FOLLOW +</button>
+          </div>
+        </div>
+        <div class="popup">
+          <button id="close">&times;</button>
+          <h2>WHITE NOISE STRESS FREE</h2>
+          <p>
+            These earbuds seal out noise and help you focus on your soundtrack
+            for sleep
+          </p>
+          <a
+            href="https://abhi-202.github.io/airbuds.github.io/"
+            class="advertisement"
+            target="_blank"
+          >
+            Buy Now</a
+          >
+        </div>
+        <div class="popular_song">
+          <div class="h4">
+            <h4>Trending Music</h4>
+            <div class="btn_s">
+              <i id="left_scroll" class="bi bi-arrow-left-short"></i>
+              <i id="right_scroll" class="bi bi-arrow-right-short"></i>
+            </div>
+          </div>
+          <div class="pop_song">
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/7.webp" alt="Aditya A" />
+                <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
+              </div>
+              <h5>
+                Chaand baaliyan
+                <br />
+                <div class="subtitle">Aditya A</div>
+              </h5>
+            </li>
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/8.webp" alt="Aditya A" />
+                <i class="bi playListPlay bi-play-circle-fill" id="8"></i>
+              </div>
+              <h5>
+                Maiyya Mainu
+                <br />
+                <div class="subtitle">Sachet Tandon</div>
+              </h5>
+            </li>
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/9.webp" alt="Jubin" />
+                <i class="bi playListPlay bi-play-circle-fill" id="9"></i>
+              </div>
+              <h5>
+                Raataan-Lambiyan
+                <br />
+                <div class="subtitle">Jubin Nautiyal</div>
+              </h5>
+            </li>
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/10.webp" alt="The" />
+                <i class="bi playListPlay bi-play-circle-fill" id="10"></i>
+              </div>
+              <h5>
+                Closer
+                <br />
+                <div class="subtitle">The Chainsmokers, Hasley</div>
+              </h5>
+            </li>
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/11.webp" alt="A.P Dhillon" />
+                <i class="bi playListPlay bi-play-circle-fill" id="11"></i>
+              </div>
+              <h5>
+                Excuses
+                <br />
+                <div class="subtitle">A.P Dhillon</div>
+              </h5>
+            </li>
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/12.webp" alt="Javed Ali" />
+                <i class="bi playListPlay bi-play-circle-fill" id="12"></i>
+              </div>
+              <h5>
+                Srivalli
+                <br />
+                <div class="subtitle">Javed Ali</div>
+              </h5>
+            </li>
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/13.webp" alt="Lothika,Savera" />
+                <i class="bi playListPlay bi-play-circle-fill" id="13"></i>
+              </div>
+              <h5>
+                Doobey
+                <br />
+                <div class="subtitle">Lothika,Savera</div>
+              </h5>
+            </li>
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/14.webp" alt="Aditya A" />
+                <i class="bi playListPlay bi-play-circle-fill" id="14"></i>
+              </div>
+              <h5>
+                Bijlee-Bijlee
+                <br />
+                <div class="subtitle">Harrdy Sandhu</div>
+              </h5>
+            </li>
+
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/15.webp" alt="Aditya A" />
+                <i class="bi playListPlay bi-play-circle-fill" id="15"></i>
+              </div>
+              <h5>
+                Attention
+                <br />
+                <div class="subtitle">Charlie Puth</div>
+              </h5>
+            </li>
+          </div>
+        </div>
+        <div class="popular_artists">
+          <div class="h4">
+            <h4>Popular Artists</h4>
+            <div class="btn_s">
+              <i id="left_scrolls" class="bi bi-arrow-left-short"></i>
+              <i id="right_scrolls" class="bi bi-arrow-right-short"></i>
+            </div>
+          </div>
+          <div class="item">
+            <li>
+              <img
+                src="img/arjit singh savvan.webp"
+                alt="Arijit Singh"
+                title="Arjit Singh"
+              />
+            </li>
+            <li>
+              <img src="img/zayn.webp" alt="Zayn Malik" title="Zayn Malik" />
+            </li>
+            <li>
+              <img src="img/jubin.webp" alt="Jubin" title=" Jubin" />
+            </li>
+            <li>
+              <img
+                src="img/Apdhillon.webp"
+                alt="Ap Dhillon"
+                title="Ap Dhillon"
+              />
+            </li>
+            <li>
+              <img src="img/shelena.webp" alt="Selena" title="Selena" />
+            </li>
+            <li>
+              <img src="img/bille.webp" alt="Billie" title="Billie" />
+            </li>
+            <li>
+              <img src="img/darshan.webp" alt="Darshan" title="Darshan" />
+            </li>
+            <li>
+              <img
+                src="img/Shreya-Ghoshal_.webp"
+                alt="Darshan"
+                title="Shreya"
+              />
+            </li>
+            <li>
+              <img
+                src="img/chainsmoker.webp"
+                alt="Chainsmoker"
+                title="Chainsmokers"
+              />
+            </li>
+            <li>
+              <img src="img/parmish.webp" alt="Parmish" title="Parmish" />
+            </li>
+            <li>
+              <img src="img/pritam.webp" alt="Pritam" title="Pritam" />
+            </li>
+          </div>
+        </div>
+      </div>
+
+      <div class="master_play">
+        <div class="wave">
+          <div class="wave1"></div>
+          <div class="wave1"></div>
+          <div class="wave1"></div>
+        </div>
+
+        <img
+          src="img/On-My-Way-English-2019-20190308195918-500x500.webp"
+          alt="Arjit "
+          id="poster_master_play"
+        />
+        <h5 id="title">
+          On May Way <br />
+          <div class="subtitle">Alan Walker</div>
+        </h5>
+        <div class="icon">
+          <i class="bi shuffle bi-music-note-beamed">next</i>
+          <i class="bi bi-skip-start" id="back"></i>
+          <i class="bi bi-play" id="masterPlay"> </i>
+          <i class="bi bi-skip-end" id="next"></i>
+          <a href="" download id="download_music"
+            ><i class="bi bi-cloud-arrow-down"></i
+          ></a>
+        </div>
+        <span id="currentStart">0:00</span>
+        <div class="bar">
+          <input type="range" id="seek" min="0" value="0" max="100" />
+          <div class="bar2" id="bar2"></div>
+          <div class="dot"></div>
+        </div>
+        <span id="currentEnd">0:00</span>
+
+        <div class="vol">
+          <i class="bi bi-volume-down-fill" id="vol_icon"></i>
+          <input type="range" id="vol" min="0" value="30" max="100" />
+          <div class="vol_bar"></div>
+          <div class="dot" id="vol_dot"></div>
+        </div>
+      </div>
+    </header>
+
+    <script src="app.js"></script>
+  </body>
+</html>

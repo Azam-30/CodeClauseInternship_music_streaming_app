@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Contact Us</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- Fontawesome icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <section class="contact-section">
+      <div class="contact-bg">
+        <h3>Get in Touch with Us</h3>
+        <h2>contact us</h2>
+        <div class="line">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <p class="text">
+          We’re here to help and answer any question you might have. We look
+          forward to hearing from you.
+        </p>
+      </div>
+
+      <div class="contact-body">
+        <div class="contact-form">
+          <form action="contactUs.php" method="post">
+            <div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="First Name"
+                name="fname"
+                required
+              />
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Last Name"
+                name="lname"
+                required
+              />
+            </div>
+            <div>
+              <input
+                type="email"
+                class="form-control"
+                placeholder="E-mail"
+                name="email"
+                required
+              />
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Phone"
+                name="phone"
+                required
+              />
+            </div>
+            <textarea
+              rows="5"
+              placeholder="Message"
+              class="form-control"
+              name="message"
+              required
+            ></textarea>
+            <input
+              type="submit"
+              class="send-btn"
+              value="send message"
+              name="send"
+            />
+          </form>
+
+          <div>
+            <img src="contact-png.webp" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
